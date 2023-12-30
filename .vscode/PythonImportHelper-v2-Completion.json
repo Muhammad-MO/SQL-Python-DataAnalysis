@@ -1,0 +1,119 @@
+[
+    {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "create_sales_table",
+        "kind": 5,
+        "importPath": "create_database",
+        "description": "create_database",
+        "peekOfCode": "create_sales_table = '''CREATE TABLE sales (\n                        sale_id INTEGER PRIMARY KEY,\n                        sale_date DATE,\n                        customer_id INTEGER,\n                        product_id INTEGER,\n                        quantity INTEGER,\n                        unit_price DECIMAL(10, 2),\n                        total_price DECIMAL(10, 2),\n                        FOREIGN KEY (customer_id) REFERENCES customers(customer_id),\n                        FOREIGN KEY (product_id) REFERENCES products(product_id)",
+        "detail": "create_database",
+        "documentation": {}
+    },
+    {
+        "label": "create_products_table",
+        "kind": 5,
+        "importPath": "create_database",
+        "description": "create_database",
+        "peekOfCode": "create_products_table = '''CREATE TABLE products (\n                            product_id INTEGER PRIMARY KEY,\n                            product_name TEXT,\n                            unit_cost DECIMAL(10, 2)\n                         )'''\ncreate_customers_table = '''CREATE TABLE customers (\n                            customer_id INTEGER PRIMARY KEY,\n                            first_name TEXT,\n                            last_name TEXT,\n                            email TEXT,",
+        "detail": "create_database",
+        "documentation": {}
+    },
+    {
+        "label": "create_customers_table",
+        "kind": 5,
+        "importPath": "create_database",
+        "description": "create_database",
+        "peekOfCode": "create_customers_table = '''CREATE TABLE customers (\n                            customer_id INTEGER PRIMARY KEY,\n                            first_name TEXT,\n                            last_name TEXT,\n                            email TEXT,\n                            phone TEXT\n                         )'''\n# Define SQL commands for inserting sample data into the tables\ninsert_products_data = '''INSERT INTO products (product_name, unit_cost) VALUES (?, ?)'''\ninsert_sales_data = '''INSERT INTO sales (sale_date, customer_id, product_id, quantity, unit_price, total_price) VALUES (?, ?, ?, ?, ?, ?)'''",
+        "detail": "create_database",
+        "documentation": {}
+    },
+    {
+        "label": "insert_products_data",
+        "kind": 5,
+        "importPath": "create_database",
+        "description": "create_database",
+        "peekOfCode": "insert_products_data = '''INSERT INTO products (product_name, unit_cost) VALUES (?, ?)'''\ninsert_sales_data = '''INSERT INTO sales (sale_date, customer_id, product_id, quantity, unit_price, total_price) VALUES (?, ?, ?, ?, ?, ?)'''\ninsert_customers_data = '''INSERT INTO customers (first_name, last_name, email, phone) VALUES (?, ?, ?, ?)'''\n# Define sample data for the products and customers tables\nproducts = [('Product A', 50.00), ('Product B', 25.00), ('Product C', 75.00), ('Product D', 40.00), ('Product E', 60.00)]\ncustomers = [\n    ('John', 'Doe', 'johndoe@example.com', '555-1234'),\n    ('Jane', 'Doe', 'janedoe@example.com', '555-5678'),\n    ('Bob', 'Smith', 'bobsmith@example.com', '555-9012'),\n    ('Alice', 'Jones', 'alicejones@example.com', '555-3456'),",
+        "detail": "create_database",
+        "documentation": {}
+    },
+    {
+        "label": "insert_sales_data",
+        "kind": 5,
+        "importPath": "create_database",
+        "description": "create_database",
+        "peekOfCode": "insert_sales_data = '''INSERT INTO sales (sale_date, customer_id, product_id, quantity, unit_price, total_price) VALUES (?, ?, ?, ?, ?, ?)'''\ninsert_customers_data = '''INSERT INTO customers (first_name, last_name, email, phone) VALUES (?, ?, ?, ?)'''\n# Define sample data for the products and customers tables\nproducts = [('Product A', 50.00), ('Product B', 25.00), ('Product C', 75.00), ('Product D', 40.00), ('Product E', 60.00)]\ncustomers = [\n    ('John', 'Doe', 'johndoe@example.com', '555-1234'),\n    ('Jane', 'Doe', 'janedoe@example.com', '555-5678'),\n    ('Bob', 'Smith', 'bobsmith@example.com', '555-9012'),\n    ('Alice', 'Jones', 'alicejones@example.com', '555-3456'),\n    ('David', 'Brown', 'davidbrown@example.com', '555-7890'),",
+        "detail": "create_database",
+        "documentation": {}
+    },
+    {
+        "label": "insert_customers_data",
+        "kind": 5,
+        "importPath": "create_database",
+        "description": "create_database",
+        "peekOfCode": "insert_customers_data = '''INSERT INTO customers (first_name, last_name, email, phone) VALUES (?, ?, ?, ?)'''\n# Define sample data for the products and customers tables\nproducts = [('Product A', 50.00), ('Product B', 25.00), ('Product C', 75.00), ('Product D', 40.00), ('Product E', 60.00)]\ncustomers = [\n    ('John', 'Doe', 'johndoe@example.com', '555-1234'),\n    ('Jane', 'Doe', 'janedoe@example.com', '555-5678'),\n    ('Bob', 'Smith', 'bobsmith@example.com', '555-9012'),\n    ('Alice', 'Jones', 'alicejones@example.com', '555-3456'),\n    ('David', 'Brown', 'davidbrown@example.com', '555-7890'),\n    ('Emily', 'Davis', 'emilydavis@example.com', '555-2345'),",
+        "detail": "create_database",
+        "documentation": {}
+    },
+    {
+        "label": "products",
+        "kind": 5,
+        "importPath": "create_database",
+        "description": "create_database",
+        "peekOfCode": "products = [('Product A', 50.00), ('Product B', 25.00), ('Product C', 75.00), ('Product D', 40.00), ('Product E', 60.00)]\ncustomers = [\n    ('John', 'Doe', 'johndoe@example.com', '555-1234'),\n    ('Jane', 'Doe', 'janedoe@example.com', '555-5678'),\n    ('Bob', 'Smith', 'bobsmith@example.com', '555-9012'),\n    ('Alice', 'Jones', 'alicejones@example.com', '555-3456'),\n    ('David', 'Brown', 'davidbrown@example.com', '555-7890'),\n    ('Emily', 'Davis', 'emilydavis@example.com', '555-2345'),\n    ('Frank', 'Wilson', 'frankwilson@example.com', '555-6789'),\n    ('Grace', 'Lee', 'gracelee@example.com', '555-1234'),",
+        "detail": "create_database",
+        "documentation": {}
+    },
+    {
+        "label": "customers",
+        "kind": 5,
+        "importPath": "create_database",
+        "description": "create_database",
+        "peekOfCode": "customers = [\n    ('John', 'Doe', 'johndoe@example.com', '555-1234'),\n    ('Jane', 'Doe', 'janedoe@example.com', '555-5678'),\n    ('Bob', 'Smith', 'bobsmith@example.com', '555-9012'),\n    ('Alice', 'Jones', 'alicejones@example.com', '555-3456'),\n    ('David', 'Brown', 'davidbrown@example.com', '555-7890'),\n    ('Emily', 'Davis', 'emilydavis@example.com', '555-2345'),\n    ('Frank', 'Wilson', 'frankwilson@example.com', '555-6789'),\n    ('Grace', 'Lee', 'gracelee@example.com', '555-1234'),\n    ('Henry', 'Chen', 'henrychen@example.com', '555-5678'),",
+        "detail": "create_database",
+        "documentation": {}
+    },
+    {
+        "label": "start_date",
+        "kind": 5,
+        "importPath": "create_database",
+        "description": "create_database",
+        "peekOfCode": "start_date = datetime.date(2022, 1, 1)\nend_date = datetime.date(2022, 12, 31)\n# Connect to the database and create the tables\nwith sqlite3.connect('sales.db') as conn:\n    # Create the sales table\n    conn.execute(create_sales_table)\n    # Create the products table\n    conn.execute(create_products_table)\n    # Create the customers table\n    conn.execute(create_customers_table)",
+        "detail": "create_database",
+        "documentation": {}
+    },
+    {
+        "label": "end_date",
+        "kind": 5,
+        "importPath": "create_database",
+        "description": "create_database",
+        "peekOfCode": "end_date = datetime.date(2022, 12, 31)\n# Connect to the database and create the tables\nwith sqlite3.connect('sales.db') as conn:\n    # Create the sales table\n    conn.execute(create_sales_table)\n    # Create the products table\n    conn.execute(create_products_table)\n    # Create the customers table\n    conn.execute(create_customers_table)\n    # Insert sample data into the products table",
+        "detail": "create_database",
+        "documentation": {}
+    }
+]
