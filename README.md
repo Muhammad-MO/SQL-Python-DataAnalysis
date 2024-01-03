@@ -2,4 +2,4 @@
 
 Uing SQL and Plotly to display graphs
 
-![picture](SQL-PYTHON-DATAANALYSIS/images/newplot.png)
+![picture](/images/newplot.png)
